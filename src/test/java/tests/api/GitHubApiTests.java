@@ -2,18 +2,8 @@ package tests.api;
 
 import com.codeborne.selenide.Selenide;
 import config.application.App;
-import customAnnotations.AllureFeatures;
-import customAnnotations.AutoMember;
-import customAnnotations.Component;
-import customAnnotations.JiraIssue;
-import customAnnotations.Layer;
-import customAnnotations.ManualMember;
-import io.qameta.allure.AllureId;
-import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import tests.api.model.Issue;
 import tests.api.model.Repo;
@@ -22,7 +12,7 @@ import tests.api.steps.GitHubApiRepoSteps;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Layer("api")
+
 public class GitHubApiTests {
     GitHubApiRepoSteps repoSteps = new GitHubApiRepoSteps();
     GitHubApiIssueSteps issueSteps = new GitHubApiIssueSteps();
