@@ -35,14 +35,14 @@ public class GitHubApiTests {
     @Disabled
     @DisplayName("Удаление репозитория")
     void deleteTrash() {
-        Repo repo1 = new Repo("my_repo1", "some_description");
+        Repo repo1 = new Repo("my_repo", "some_description");
         repoSteps.deleteRepo(repo1);
     }
 
     @Test
     @DisplayName("Создание репозитория")
     void createdRepo() {
-        Repo repo1 = new Repo("my_repo1", "some_description");
+        Repo repo1 = new Repo("my_repo", "some_description");
 
         repoSteps.createRepo(repo1);
         repoSteps.checkExistsRepo(repo1);
