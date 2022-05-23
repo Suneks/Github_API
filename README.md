@@ -33,8 +33,6 @@ test
 -DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
 -Dthreads=${THREADS}
 ```
-### Видео о прохождении тестов
-![Selenoid](src/test/resources/files/Selenoid.gif)
 
 ### Запуск в Jenkins
 Статистика по запускам
