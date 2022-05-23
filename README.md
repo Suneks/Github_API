@@ -18,7 +18,7 @@ Telegram (reports), Jira.
 ### Команда для запуска из терминала
 Локально должны быть заданы параметры в local.properies, app.properties
 ```
-gradle clean
+gradle clean test
 ```
 Удаленный запуск:
 ```
