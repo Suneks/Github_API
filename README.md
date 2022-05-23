@@ -37,8 +37,6 @@ test
 Статистика по запускам
 https://jenkins.autotests.cloud/job/011-Alex-11-13-Github_API/
 ![Jenkins](src/test/resources/files/Jenkins_1.png)
-Указание параметров для запуска
-![Jenkins](src/test/resources/files/Jenkins_2.png)
 
 ### Отчёт в Allure Report
 ![Allure](src/test/resources/files/AllureReport.png)
