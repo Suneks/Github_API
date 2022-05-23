@@ -2,7 +2,7 @@
 # Автотесты API на http://github.com 🚀👨‍💻🚀
 
 
-![Intelij_IDEA](src/test/resources/tpl/Intelij_IDEA.png)![Java](src/test/resources/tpl/Java.png)![Selenide](src/test/resources/tpl/Selenide.png)![Selenoid](src/test/resources/tpl/Selenoid.png)![Gradle](src/test/resources/tpl/Gradle.png)![JUnit5](src/test/resources/tpl/JUnit5.png)![Allure Report](src/test/resources/tpl/Allure_Report.png)![AllureTestOps](src/test/resources/tpl/AllureTestOps.png)![Github](src/test/resources/tpl/Github.png)![Jenkins](src/test/resources/tpl/Jenkins.png)![Rest-Assured](src/test/resources/tpl/Rest-Assured.png)![Telegram](src/test/resources/tpl/Telegram.png)![Jira](src/test/resources/tpl/Jira.png)
+![Intelij_IDEA](src/test/resources/files/icons/Intelij_IDEA.png)![Java](src/test/resources/files/icons/Java.png)![Selenide](src/test/resources/files/icons/Selenide.png)![Selenoid](src/test/resources/files/icons/Selenoid.png)![Gradle](src/test/resources/files/icons/Gradle.png)![JUnit5](src/test/resources/files/icons/JUnit5.png)![Allure Report](src/test/resources/files/icons/Allure_Report.png)![AllureTestOps](src/test/resources/files/icons/AllureTestOps.png)![Github](src/test/resources/files/icons/Github.png)![Jenkins](src/test/resources/files/icons/Jenkins.png)![Rest-Assured](src/test/resources/files/icons/Rest-Assured.png)![Telegram](src/test/resources/files/icons/Telegram.png)![Jira](src/test/resources/files/icons/Jira.png)
 
 IntelliJ IDEA, Java, Selenide, Selenoid, Gradle, JUnit5, Allure Report, Allure TestOps, Github, Jenkins, Rest-Assured,
 Telegram (reports), Jira.
