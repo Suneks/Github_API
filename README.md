@@ -9,7 +9,7 @@
 - <a href="#Отчёт в Allure Report">Allure отчет</a>
 - <a href="#Хранение тест-кейсов в Allure TestOps">Allure TestOps</a>
 - <a href="#Интерграция с Jira">Отчет в Telegram</a>
-- <a href="#Уведомления в Telegram">Видео примеры прохождения тестов</a>
+- <a href="#Уведомления в Telegram">Уведомления в Telegram</a>
 
 Технологии и инструменты
 
@@ -56,12 +56,6 @@ https://jenkins.autotests.cloud/job/011-Alex-11-13-Github_API/
 ### Хранение тест-кейсов в Allure TestOps
 Ручные и автотесты
 ![Allure](src/test/resources/files/AllureTestOps_3.png)
-Дашборд
-![Allure](src/test/resources/files/AllureTestOps_4.png)
-Ланчи
-![Allure](src/test/resources/files/AllureTestOps_5.png)
-Результат запуска ланча
-![Allure](src/test/resources/files/AllureTestOps_1.png)
 
 ### Интерграция с Jira
 Отображение тест-кейсов и ланча
