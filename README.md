@@ -7,7 +7,7 @@
 3. [Запуск тестов](#запуск_тестов)
 4. [Сборка в Jenkins](#дженкинс)
 5. [Отчёт в Allure Report](#аллюр)
-6. [Allure TestOps](#аллюр_тестопс)
+6. [Главный экран отчета Allure TestOps](#аллюр_тестопс)
 7. [Интерграция с Jira](#джира)
 8. [Уведомления в Telegram](#телеграм)
 
@@ -58,7 +58,7 @@ https://jenkins.autotests.cloud/job/011-Alex-11-13-Github_API/
 ![Allure](src/test/resources/files/AllureReport.png)
 
 <a name="аллюр_тестопс"></a>
-### Хранение тест-кейсов в Allure TestOps
+### Главный экран отчета Allure TestOps
 Ручные и автотесты
 ![Allure](src/test/resources/files/AllureTestOps_3.png)
 
