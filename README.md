@@ -19,6 +19,29 @@
 IntelliJ IDEA, Java, Selenide, Selenoid, Gradle, JUnit5, Allure Report, Allure TestOps, Github, Jenkins, Rest-Assured,
 Telegram (reports), Jira.
 
+```mermaid        
+    stateDiagram-v2
+        State1: Начало
+        State2: Java & IntelliJ IDEA & Rest-Assured
+        State3: Selenide & JUnit5
+        State4: Gradle
+        State5: GitHub
+        State6: Jenkins
+        State7: Selenoid & Docker
+        State8: Allure Report & Allure TestOps
+        State9: Telegram report
+        State10: Конец
+        State1 --> State2
+        State2 --> State3
+        State3 --> State4
+        State4 --> State5
+        State5 --> State6
+        State6 --> State7
+        State7 --> State8
+        State8 --> State9
+        State9 --> State10
+```
+
 <a name="описание"></a>
 ## Реализованы проверки:
 - [X] - Создание репозитория
