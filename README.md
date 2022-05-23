@@ -35,6 +35,7 @@ test
 
 ### Запуск в Jenkins
 Статистика по запускам
+https://jenkins.autotests.cloud/job/011-Alex-11-13-Github_API/
 ![Jenkins](src/test/resources/files/Jenkins_1.png)
 Указание параметров для запуска
 ![Jenkins](src/test/resources/files/Jenkins_2.png)
