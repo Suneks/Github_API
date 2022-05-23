@@ -1,4 +1,3 @@
-# diploma_project
 # Автотесты API на http://github.com 🚀👨‍💻🚀
 
 
