@@ -74,6 +74,4 @@ public class GitHubApiRepoSteps {
                 .log().all()
                 .statusCode(204);
     }
-
-
 }
