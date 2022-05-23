@@ -1,0 +1,68 @@
+plugins {
+    id "java"
+    id "io.qameta.allure" version "2.8.1"
+}
+
+repositories {
+    maven {url = "https://dl.bintray.com/qameta/maven-unstable/"}
+    mavenCentral()
+}
+
+def selenideVersion = "5.22.1",
+    allureVersion = "2.14.0",
+    junitVersion = "5.7.2",
+    jacksonVersion = '2.12.3'
+
+allure {
+    version = allureVersion
+    autoconfigure = true
+    aspectjweaver = true
+    configuration = "testImplementation"
+    useJUnit5 {
+        version = allureVersion
+    }
+}
+
+dependencies {
+    testImplementation(
+            "org.aspectj:aspectjweaver:1.9.6",
+            "org.assertj:assertj-core:3.19.0",
+            "com.codeborne:selenide:$selenideVersion",
+            "io.qameta.allure:allure-selenide:$allureVersion",
+            "io.qameta.allure:allure-rest-assured:$allureVersion",
+            "io.rest-assured:rest-assured:4.4.0",
+            "org.junit.jupiter:junit-jupiter-api:$junitVersion",
+            "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion",
+            "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion",
+            "org.json:json:20210307",
+            "org.aeonbits.owner:owner:1.0.12")
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.withType(Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform()
+
+    if (System.getProperty("threads") != null) {
+        systemProperties += [
+                'junit.jupiter.execution.parallel.enabled'                 : true,
+                'junit.jupiter.execution.parallel.mode.default'            : 'concurrent',
+                'junit.jupiter.execution.parallel.mode.classes.default'    : 'concurrent',
+                'junit.jupiter.execution.parallel.config.strategy'         : 'fixed',
+                'junit.jupiter.execution.parallel.config.fixed.parallelism': System.getProperty("threads").toInteger()
+        ]
+    }
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
